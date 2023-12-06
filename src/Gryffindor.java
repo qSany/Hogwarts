@@ -1,4 +1,16 @@
 class Gryffindor extends Hogwarts {
+
+    public int compareStudents(Gryffindor student) {
+        // Сравнение по полю intelligence
+        if (this.intelligence > student.intelligence) {
+            return 1;
+        } else if (this.intelligence < student.intelligence) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
+}
     private int nobility;
     private int honor;
     private int bravery;

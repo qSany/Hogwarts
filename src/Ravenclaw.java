@@ -1,4 +1,15 @@
 class Ravenclaw extends Hogwarts {
+    public int compareStudents(Ravenclaw student) {
+        // Сравнение по полю wisdom
+        if (this.wisdom > student.wisdom) {
+            return 1;
+        } else if (this.wisdom < student.wisdom) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
+}
     private int intelligence;
     private int wisdom;
     private int wit;

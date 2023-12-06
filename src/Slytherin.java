@@ -1,4 +1,5 @@
 class Slytherin extends Hogwarts {
+
     private int cunning;
     private int determination;
     private int ambition;
@@ -37,4 +38,14 @@ class Slytherin extends Hogwarts {
 
 
     }
-
+    public int compareStudents(Slytherin student) {
+        // Сравнение по полю cunning
+        if (this.cunning > student.cunning) {
+            return 1;
+        } else if (this.cunning < student.cunning) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
+}

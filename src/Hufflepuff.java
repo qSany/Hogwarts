@@ -1,4 +1,15 @@
 class Hufflepuff extends Hogwarts {
+    public int compareStudents(Hufflepuff student) {
+        // Сравнение по полю agility
+        if (this.agility > student.agility) {
+            return 1;
+        } else if (this.agility < student.agility) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
+}
     private int diligence;
     private int loyalty;
     private int honesty;
