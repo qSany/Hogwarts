@@ -1,16 +1,4 @@
 class Gryffindor extends Hogwarts {
-
-    public int compareStudents(Gryffindor student) {
-        // Сравнение по полю intelligence
-        if (this.intelligence > student.intelligence) {
-            return 1;
-        } else if (this.intelligence < student.intelligence) {
-            return -1;
-        } else {
-            return 0;
-        }
-    }
-}
     private int nobility;
     private int honor;
     private int bravery;
@@ -26,6 +14,16 @@ class Gryffindor extends Hogwarts {
         super.studentDescription();
         System.out.println("Качества Гриффиндора: благородство " + nobility + ", честь " + honor + ", храбрость " + bravery);
     }
+    public int compareStudents(Gryffindor student) {
+        // Сравнение по полю intelligence
+        if (this.intelligence > student.intelligence) {
+            return 1;
+        } else if (this.intelligence < student.intelligence) {
+            return -1;
+        } else {
+            return 0;
+        }
+
 
     public int getNobility() {
         return nobility;

@@ -14,6 +14,15 @@ class Slytherin extends Hogwarts {
         this.resourcefulness = resourcefulness;
         this.thirstForPower = thirstForPower;
     }
+    public int compareStudents(Slytherin student) {
+        // Сравнение по полю cunning
+        if (this.cunning > student.cunning) {
+            return 1;
+        } else if (this.cunning < student.cunning) {
+            return -1;
+        } else {
+            return 0;
+        }
 
     public void studentDescription() {
         super.studentDescription();
@@ -38,14 +47,4 @@ class Slytherin extends Hogwarts {
 
 
     }
-    public int compareStudents(Slytherin student) {
-        // Сравнение по полю cunning
-        if (this.cunning > student.cunning) {
-            return 1;
-        } else if (this.cunning < student.cunning) {
-            return -1;
-        } else {
-            return 0;
-        }
-    }
-}
+

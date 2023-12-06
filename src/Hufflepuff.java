@@ -1,15 +1,4 @@
 class Hufflepuff extends Hogwarts {
-    public int compareStudents(Hufflepuff student) {
-        // Сравнение по полю agility
-        if (this.agility > student.agility) {
-            return 1;
-        } else if (this.agility < student.agility) {
-            return -1;
-        } else {
-            return 0;
-        }
-    }
-}
     private int diligence;
     private int loyalty;
     private int honesty;
@@ -25,6 +14,17 @@ class Hufflepuff extends Hogwarts {
         super.studentDescription();
         System.out.println("Качества Пуффендуя: трудолюбие " + diligence + ", верность " + loyalty + ", честность " + honesty);
     }
+
+    public int compareStudents(Hufflepuff student) {
+        // Сравнение по полю agility
+        if (this.agility > student.agility) {
+            return 1;
+        } else if (this.agility < student.agility) {
+            return -1;
+        } else {
+            return 0;
+        }
+
 
     public int getDiligence() {
         return diligence;
