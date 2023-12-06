@@ -22,6 +22,7 @@ class Ravenclaw extends Hogwarts {
         } else {
             return 0;
         }
+    }
 
 
     public void studentDescription() {

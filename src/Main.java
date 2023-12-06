@@ -8,20 +8,20 @@ public class Main {
         } else {
             System.out.println("Гарри Поттер и Седрик Диггори имеют одинаковый уровень интеллекта.");
         }
+    }
 
-
-        Gryffindor harryPotter = new Gryffindor(100, 50, 10, 20, 30);
+    Gryffindor harryPotter = new Gryffindor(100, 50, 10, 20, 30);
         harryPotter.studentDescription();
 
-        Hufflepuff cedricDiggory = new Hufflepuff(80, 40, 15, 25, 35);
+    Hufflepuff cedricDiggory = new Hufflepuff(80, 40, 15, 25, 35);
         cedricDiggory.studentDescription();
 
-        Ravenclaw lunaLovegood = new Ravenclaw(90, 45, 12, 22, 32, 42);
+    Ravenclaw lunaLovegood = new Ravenclaw(90, 45, 12, 22, 32, 42);
         lunaLovegood.studentDescription();
 
 
-        Slytherin dracoMalfoy = new Slytherin(95, 48, 18, 28, 38, 48, 58);
+    Slytherin dracoMalfoy = new Slytherin(95, 48, 18, 28, 38, 48, 58);
         dracoMalfoy.studentDescription();
-    }
+}
 
 }

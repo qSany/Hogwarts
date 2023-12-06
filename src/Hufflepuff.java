@@ -24,6 +24,7 @@ class Hufflepuff extends Hogwarts {
         } else {
             return 0;
         }
+    }
 
 
     public int getDiligence() {
