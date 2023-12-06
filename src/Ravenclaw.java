@@ -46,3 +46,4 @@ class Ravenclaw extends Hogwarts {
         return creativity;
     }
 }
+

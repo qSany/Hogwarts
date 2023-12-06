@@ -47,6 +47,5 @@ class Slytherin extends Hogwarts {
         return resourcefulness;
     }
 
-
 }
 

@@ -10,6 +10,7 @@ class Gryffindor extends Hogwarts {
         this.bravery = bravery;
     }
 
+
     public void studentDescription() {
         super.studentDescription();
         System.out.println("Качества Гриффиндора: благородство " + nobility + ", честь " + honor + ", храбрость " + bravery);
@@ -39,3 +40,5 @@ class Gryffindor extends Hogwarts {
         return bravery;
     }
 }
+
+

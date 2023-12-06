@@ -19,4 +19,3 @@ class Hogwarts {
     public void studentDescription() {
         System.out.println("Ученик школы Хогвартс с силой магии " + magicPower + " и расстоянием трансгрессии " + transgressionDistance);
     }
-}
