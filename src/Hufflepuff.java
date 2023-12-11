@@ -3,8 +3,9 @@ class Hufflepuff extends Hogwarts {
     private int loyalty;
     private int honesty;
 
-    public Hufflepuff(int magicPower, int transgressionDistance, int diligence, int loyalty, int honesty) {
-        super(magicPower, transgressionDistance);
+
+    public Hufflepuff(String name, int magicPower, int transgressionDistance, int diligence, int loyalty, int honesty) {
+        super(name, magicPower, transgressionDistance);
         this.diligence = diligence;
         this.loyalty = loyalty;
         this.honesty = honesty;
@@ -12,20 +13,8 @@ class Hufflepuff extends Hogwarts {
 
     public void studentDescription() {
         super.studentDescription();
-        System.out.println("Качества Пуффендуя: трудолюбие " + diligence + ", верность " + loyalty + ", честность " + honesty);
+        System.out.println(": трудолюбие " + diligence + ", верность " + loyalty + ", честность " + honesty);
     }
-
-    public int compareStudents(Hufflepuff student) {
-        // Сравнение по полю agility
-        if (this.agility > student.agility) {
-            return 1;
-        } else if (this.agility < student.agility) {
-            return -1;
-        } else {
-            return 0;
-        }
-    }
-
 
     public int getDiligence() {
         return diligence;
@@ -37,5 +26,17 @@ class Hufflepuff extends Hogwarts {
 
     public int getHonesty() {
         return honesty;
+    }
+
+    private int sum() {
+        return honesty + loyalty + diligence;
+    }
+
+    public void compareStudents(Hufflepuff student) {
+        if (this.sum() > student.sum()) {
+            System.out.println(this.getName() + " Сильнее " + student.getName());
+        } else {
+            System.out.println(student.getName() + " Лучше " + this.getName());
+        }
     }
 }

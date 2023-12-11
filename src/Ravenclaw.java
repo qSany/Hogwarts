@@ -5,8 +5,9 @@ class Ravenclaw extends Hogwarts {
     private int wit;
     private int creativity;
 
-    public Ravenclaw(int magicPower, int transgressionDistance, int intelligence, int wisdom, int wit, int creativity) {
-        super(magicPower, transgressionDistance);
+
+    public Ravenclaw(String name, int magicPower, int transgressionDistance, int intelligence, int wisdom, int wit, int creativity) {
+        super(name, magicPower, transgressionDistance);
         this.intelligence = intelligence;
         this.wisdom = wisdom;
         this.wit = wit;
@@ -27,7 +28,7 @@ class Ravenclaw extends Hogwarts {
 
     public void studentDescription() {
         super.studentDescription();
-        System.out.println("Качества Когтевранца: умность " + intelligence + ", мудрость " + wisdom + ", остроумие " + wit + ", творчество " + creativity);
+        System.out.println(": умность " + intelligence + ", мудрость " + wisdom + ", остроумие " + wit + ", творчество " + creativity);
     }
 
     public int getIntelligence() {
